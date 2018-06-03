@@ -1,1 +1,4 @@
 https://getbootstrap.com/docs/3.3/getting-started/#examples
+https://bootswatch.com/
+https://www.bootstrapcdn.com/
+https://code.jquery.com/
