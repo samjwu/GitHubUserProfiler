@@ -9,40 +9,41 @@
   <meta name="description" content="GitHub User Search">
   <meta name="author" content="samjwu">
 
-  <title>GitHub User Search</title>
+  <title>GitHub User Profiler</title>
 
   <link href="https://bootswatch.com/4/slate/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">GitHub User Search</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto"></ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input type="text" id="githubuser" class="form-control mr-sm-2" placeholder="Search for a GitHub User">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="usersearch">
-        <h1>GitHub User Search</h1>
-        <input type="text" id="githubuser" class="form-control" placeholder="Search for a GitHub User">
-      </div>
-    </div><!-- /.container -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">GitHub User Profiler</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto"></ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input type="text" class="searchbar form-control mr-sm-2" placeholder="Enter a GitHub Username">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Submit</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="searchquery">
+      <h1>GitHub User Profiler</h1>
+      <input type="text" class="searchbar form-control" placeholder="Enter a GitHub Username">
+    </div>
+    <div class="searchresults"></div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 
 
 </html>
