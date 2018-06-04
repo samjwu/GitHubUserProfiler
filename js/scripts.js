@@ -12,13 +12,19 @@ $(document).ready(function() {
             $(".searchresults").html(
                 `
                 <div class="jumbotron">
-                    <h1 class="username">${githubuser.name}</h1>
-                    <p class="lead">
-                        <img class="avatar profilepicture" src="${githubuser.avatar_url}">
-                    </p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="${githubuser.html_url}" role="button">GitHub Profile</a>
-                    </p>
+                    <div class="row">
+                        <div class="col-md-3 basicinfo">
+                            <h1 class="username">${githubuser.name}</h1>
+                            <img class="avatar" src="${githubuser.avatar_url}">
+                            <a class="btn btn-primary" href="${githubuser.html_url}" role="button">GitHub Profile</a>    
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                Number of Public Repositories: ${githubuser.public_repos}
+                            </p>
+                            <span class="label label-default">Number of Public Gists: ${githubuser.public_gists}</span>
+                        </div>
+                    </div>
                 </div>
                 `
             );

@@ -2,6 +2,11 @@ index.html
 https://www.w3.org/TR/html401/interact/forms.html
 https://www.w3schools.com/bootstrap/bootstrap_forms.asp
 https://getbootstrap.com/docs/4.0/components/forms/#form-controls
+
+styles.css
+https://stackoverflow.com/questions/3622756/button-center-css
+
+scripts.js
 https://www.w3schools.com/jquery/event_keyup.asp
 https://api.jquery.com/keyup/
 https://stackoverflow.com/questions/9762231/bind-onkeyup-to-dynamic-elements-in-jquery-twitter-bootstrap-typehead
@@ -14,3 +19,7 @@ https://www.w3schools.com/jquery/jquery_ref_ajax.asp
 https://www.w3schools.com/jquery/ajax_ajax.asp
 http://api.jquery.com/jquery.ajax/
 https://api.jquery.com/deferred.done/
+https://api.github.com/users/samjwu
+https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
+https://www.w3schools.com/bootstrap/bootstrap_grid_medium.asp
+https://getbootstrap.com/docs/4.0/layout/grid/
