@@ -23,6 +23,18 @@ $(document).ready(function() {
                             <span class="badge badge-pill badge-secondary">Gists: ${githubuser.public_gists}</span>
                             <span class="badge badge-pill badge-light">Followers: ${githubuser.followers}</span>
                             <span class="badge badge-pill badge-dark">Following: ${githubuser.following}</span>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr class="table-primary">
+                                        <th scope="row">Website:</th>
+                                        <td>${githubuser.blog}</td>
+                                    </tr>
+                                    <tr class="table-secondary">
+                                        <th scope="row">Location:</th>
+                                        <td>${githubuser.location}</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
                         </div>
                     </div>
                 </div>
