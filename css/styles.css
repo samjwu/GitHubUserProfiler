@@ -1,12 +1,41 @@
+body {
+    background: #000;
+}
+
+.container h1 {
+    color: #fff;
+}
+
 .basicinfo {
     text-align: center;
 }
 
 .username {
     font-size: 1rem;
+    color: #fff;
 }
 
 .avatar {
     width: 100%;
     padding-bottom: 1rem;
+}
+
+.badge-primary {
+    background: #fff;
+    color: #000;
+}
+
+.badge-secondary {
+    background: #ccc;
+    color: #000;
+}
+
+.badge-light {
+    background: #aaa;
+    color: #000;
+}
+
+.badge-dark {
+    background: #888;
+    color: #000;
 }

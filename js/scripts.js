@@ -19,10 +19,10 @@ $(document).ready(function() {
                             <a class="btn btn-primary" href="${githubuser.html_url}" role="button">GitHub Profile</a>    
                         </div>
                         <div class="col-md-9">
-                            <p>
-                                Number of Public Repositories: ${githubuser.public_repos}
-                            </p>
-                            <span class="label label-default">Number of Public Gists: ${githubuser.public_gists}</span>
+                            <span class="badge badge-pill badge-primary">Repositories: ${githubuser.public_repos}</span>
+                            <span class="badge badge-pill badge-secondary">Gists: ${githubuser.public_gists}</span>
+                            <span class="badge badge-pill badge-light">Followers: ${githubuser.followers}</span>
+                            <span class="badge badge-pill badge-dark">Following: ${githubuser.following}</span>
                         </div>
                     </div>
                 </div>
