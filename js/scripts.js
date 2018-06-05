@@ -16,22 +16,35 @@ $(document).ready(function() {
                         <div class="col-md-3 basicinfo">
                             <h1 class="username">${githubuser.name}</h1>
                             <img class="avatar" src="${githubuser.avatar_url}">
+                            <p>${githubuser.bio}</p>
                             <a class="btn btn-primary" href="${githubuser.html_url}" role="button">GitHub Profile</a>    
                         </div>
                         <div class="col-md-9">
-                            <span class="badge badge-pill badge-primary">Repositories: ${githubuser.public_repos}</span>
-                            <span class="badge badge-pill badge-secondary">Gists: ${githubuser.public_gists}</span>
-                            <span class="badge badge-pill badge-light">Followers: ${githubuser.followers}</span>
-                            <span class="badge badge-pill badge-dark">Following: ${githubuser.following}</span>
+                            <a href="${githubuser.html_url}?tab=repositories" class="badge badge-pill badge-primary">Repositories: ${githubuser.public_repos}</a>
+                            <a href="https://gist.github.com/${githubuser.login}" class="badge badge-pill badge-secondary">Gists: ${githubuser.public_gists}</a>
+                            <a href="${githubuser.html_url}?tab=followers" class="badge badge-pill badge-light">Followers: ${githubuser.followers}</a>
+                            <a href="${githubuser.html_url}?tab=following" class="badge badge-pill badge-dark">Following: ${githubuser.following}</a>
                             <table class="table table-hover">
                                 <tbody>
                                     <tr class="table-primary">
-                                        <th scope="row">Website:</th>
-                                        <td>${githubuser.blog}</td>
+                                        <th scope="row">Company:</th>
+                                        <td>${githubuser.company}</td>
                                     </tr>
                                     <tr class="table-secondary">
                                         <th scope="row">Location:</th>
                                         <td>${githubuser.location}</td>
+                                    </tr>
+                                    <tr class="table-primary">
+                                        <th scope="row">Email:</th>
+                                        <td>${githubuser.email}</td>
+                                    </tr>
+                                    <tr class="table-secondary">
+                                        <th scope="row">Website:</th>
+                                        <td>${githubuser.blog}</td>
+                                    </tr>
+                                    <tr class="table-primary">
+                                        <th scope="row">Joined GitHub:</th>
+                                        <td>${githubuser.created_at}</td>
                                     </tr>
                                 </tbody>
                             </table> 

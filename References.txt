@@ -5,6 +5,7 @@ https://getbootstrap.com/docs/4.0/components/forms/#form-controls
 
 styles.css
 https://stackoverflow.com/questions/3622756/button-center-css
+https://www.w3schools.com/cssref/css3_pr_word-wrap.asp
 
 scripts.js
 https://www.w3schools.com/jquery/event_keyup.asp
@@ -23,3 +24,4 @@ https://api.github.com/users/samjwu
 https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
 https://www.w3schools.com/bootstrap/bootstrap_grid_medium.asp
 https://getbootstrap.com/docs/4.0/layout/grid/
+https://stackoverflow.com/questions/12010108/listing-all-your-github-gists-on-one-page
