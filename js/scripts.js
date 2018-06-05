@@ -46,6 +46,10 @@ $(document).ready(function() {
                                         <th scope="row">Joined GitHub:</th>
                                         <td>${githubuser.created_at}</td>
                                     </tr>
+                                    <tr class="table-secondary">
+                                        <th scope="row">Last Active:</th>
+                                        <td>${githubuser.updated_at}</td>
+                                    </tr>
                                 </tbody>
                             </table> 
                         </div>
