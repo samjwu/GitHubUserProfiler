@@ -25,3 +25,4 @@ https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
 https://www.w3schools.com/bootstrap/bootstrap_grid_medium.asp
 https://getbootstrap.com/docs/4.0/layout/grid/
 https://stackoverflow.com/questions/12010108/listing-all-your-github-gists-on-one-page
+https://www.sitepoint.com/use-jquerys-ajax-function/

@@ -9,6 +9,22 @@ $(document).ready(function() {
                 client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff"
             }
         }).done(function(githubuser) {
+            $.ajax({
+                url: "https://api.github.com/users/" + githubusername + "/repos",
+                data: {
+                    client_id: "027f16318682173bc33b",
+                    client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff"
+                }
+            }).done(function(repositories) {
+                $.each(repositories, function(index, repository) {
+                    $("#repos").append(
+                        `
+                        <div class="well">
+                        </div>
+                        `
+                    );
+                });
+            });
             $(".searchresults").html(
                 `
                 <div class="jumbotron">
@@ -54,6 +70,8 @@ $(document).ready(function() {
                             </table> 
                         </div>
                     </div>
+                    <h1 class="repositories-header">Repositories<h1>
+                    <div id="repositories"></div>
                 </div>
                 `
             );
