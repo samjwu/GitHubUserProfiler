@@ -23,13 +23,13 @@ $(document).ready(function() {
                         `
                         <div class="well">
                             <div class="row">
-                                <div class="col-md-7">
-                                    <strong>${repository.name}</strong>
-                                </div>
-                                <div class="col-md-3">
-                                </div>
-                                <div class="col-md-2">
-                                </div>
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr class="table-default">
+                                            <td>${repository.name}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         `
