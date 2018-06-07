@@ -13,13 +13,24 @@ $(document).ready(function() {
                 url: "https://api.github.com/users/" + githubusername + "/repos",
                 data: {
                     client_id: "027f16318682173bc33b",
-                    client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff"
+                    client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff",
+                    sort: "created: asc",
+                    per_page: 5
                 }
             }).done(function(repositories) {
                 $.each(repositories, function(index, repository) {
-                    $("#repos").append(
+                    $("#repositories").append(
                         `
                         <div class="well">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <strong>${repository.name}</strong>
+                                </div>
+                                <div class="col-md-3">
+                                </div>
+                                <div class="col-md-2">
+                                </div>
+                            </div>
                         </div>
                         `
                     );
