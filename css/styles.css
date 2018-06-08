@@ -53,13 +53,22 @@ body {
     color: #000;
 }
 
+.table-default th {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.table-default th:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
 .table-default td {
     background-color: #fff;
     color: #000;
     font-size: 1rem;
-}
-
-.table-default td:hover {
-    background-color: #000;
-    color: #fff;
-}
+    width: 50%;
+}}

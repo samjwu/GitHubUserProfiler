@@ -26,8 +26,10 @@ $(document).ready(function() {
                                 <table class="table table-hover">
                                     <tbody>
                                         <tr class="table-default">
-                                            <td>${repository.name}</td>
+                                        <th scope="row">${repository.name}</th>
+                                        <td>${repository.description}</td>
                                         </tr>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
