@@ -23,15 +23,17 @@ $(document).ready(function() {
                         `
                         <div class="well">
                             <div class="row">
-                                <table class="table table-hover">
-                                    <tbody>
-                                        <tr class="table-default">
-                                        <th scope="row">${repository.name}</th>
-                                        <td>${repository.description}</td>
-                                        </tr>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div class="col-md-9 "> 
+                                    <strong>${repository.name}</strong>
+                                    <br>
+                                    <p>${repository.description}</p>
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                </div>
+                                <div class="col-md-2">
+                                    
+                                </div>
                             </div>
                         </div>
                         `
@@ -83,9 +85,9 @@ $(document).ready(function() {
                             </table> 
                         </div>
                     </div>
-                    <h1 class="repositories-header">Repositories<h1>
-                    <div id="repositories"></div>
                 </div>
+                <h1 class="repositories-header">Repositories<h1>
+                <div id="repositories"></div>
                 `
             );
         });
