@@ -29,7 +29,9 @@ $(document).ready(function() {
                                     <p>${repository.description}</p>
                                 </div>
                                 <div class="col-md-3">
-                                    
+                                    <span class="badge badge-pill badge-watch">Watchers: ${repository.watchers_count}</span>
+                                    <span class="badge badge-pill badge-star">Stars: ${repository.stargazers_count}</span>    
+                                    <span class="badge badge-pill badge-fork">Forks: ${repository.forks_count}</span>
                                 </div>
                                 <div class="col-md-2">
                                     
@@ -51,10 +53,10 @@ $(document).ready(function() {
                             <a class="btn btn-primary" href="${githubuser.html_url}" role="button">GitHub Profile</a>    
                         </div>
                         <div class="col-md-9">
-                            <a href="${githubuser.html_url}?tab=repositories" class="badge badge-pill badge-primary">Repositories: ${githubuser.public_repos}</a>
-                            <a href="https://gist.github.com/${githubuser.login}" class="badge badge-pill badge-secondary">Gists: ${githubuser.public_gists}</a>
-                            <a href="${githubuser.html_url}?tab=followers" class="badge badge-pill badge-light">Followers: ${githubuser.followers}</a>
-                            <a href="${githubuser.html_url}?tab=following" class="badge badge-pill badge-dark">Following: ${githubuser.following}</a>
+                            <a href="${githubuser.html_url}?tab=repositories" class="badge badge-pill badge-repo">Repositories: ${githubuser.public_repos}</a>
+                            <a href="https://gist.github.com/${githubuser.login}" class="badge badge-pill badge-gist">Gists: ${githubuser.public_gists}</a>
+                            <a href="${githubuser.html_url}?tab=followers" class="badge badge-pill badge-follower">Followers: ${githubuser.followers}</a>
+                            <a href="${githubuser.html_url}?tab=following" class="badge badge-pill badge-following">Following: ${githubuser.following}</a>
                             <table class="table table-hover">
                                 <tbody>
                                     <tr class="table-primary">

@@ -21,22 +21,22 @@ body {
     padding-bottom: 1rem;
 }
 
-.badge-primary {
+.badge-repo {
     background: #fff;
     color: #000;
 }
 
-.badge-secondary {
+.badge-gist {
     background: #ccc;
     color: #000;
 }
 
-.badge-light {
+.badge-follower {
     background: #aaa;
     color: #000;
 }
 
-.badge-dark {
+.badge-following {
     background: #888;
     color: #000;
 }
@@ -88,3 +88,18 @@ body {
     text-align: center;
     box-shadow: inset 0 0 20px rgb(255, 255, 255), 0 0 30px black;
   }
+
+.badge-watch {
+    background: #fff;
+    color: #000;
+}
+
+.badge-star {
+    background: #fff;
+    color: #000;
+}
+
+.badge-fork {
+    background: #fff;
+    color: #000;
+}
