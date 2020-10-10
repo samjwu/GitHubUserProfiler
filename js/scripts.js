@@ -5,15 +5,15 @@ $(document).ready(function() {
         $.ajax({
             url: "https://api.github.com/users/" + githubusername,
             data: {
-                client_id: config.client_id,
-                client_secret: config.client_secret
+                client_id: pubconfig.client_id,
+                client_secret: pubconfig.client_secret
             }
         }).done(function(githubuser) {
             $.ajax({
                 url: "https://api.github.com/users/" + githubusername + "/repos",
                 data: {
-                    client_id: config.client_id,
-                    client_secret: config.client_secret,
+                    client_id: pubconfig.client_id,
+                    client_secret: pubconfig.client_secret,
                     sort: "created: asc",
                     per_page: 5
                 }
