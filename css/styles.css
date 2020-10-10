@@ -33,7 +33,7 @@ body {
 }
 
 .badge-gist {
-    background: #ccc;
+    background: #eee;
     color: #000;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .badge-follower {
-    background: #aaa;
+    background: #ddd;
     color: #000;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .badge-following {
-    background: #888;
+    background: #ccc;
     color: #000;
 }
 
@@ -70,15 +70,16 @@ body {
 }
 
 .table-primary {
-    color: #000;
+    color: #fff;
 }
 
 .table-secondary {
-    color: #000;
+    color: #fff;
 }
 
 .repositories-header {
     text-align: center;
+    font-size: 3rem;
 }
 
 .well {
@@ -91,19 +92,26 @@ body {
     vertical-align: top;
     text-align: center;
     box-shadow: inset 0 0 20px rgb(255, 255, 255), 0 0 30px black;
+    font-size: 1rem;
   }
 
 .badge-watch {
     background: #fff;
     color: #000;
+    font-size: 1rem;
+    padding: 0.25rem;
 }
 
 .badge-star {
     background: #fff;
     color: #000;
+    font-size: 1rem;
+    padding: 0.25rem;
 }
 
 .badge-fork {
     background: #fff;
     color: #000;
+    font-size: 1rem;
+    padding: 0.25rem;
 }

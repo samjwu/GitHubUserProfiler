@@ -5,15 +5,15 @@ $(document).ready(function() {
         $.ajax({
             url: "https://api.github.com/users/" + githubusername,
             data: {
-                client_id: "027f16318682173bc33b",
-                client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff"
+                client_id: "b9315bcd5a07fcd759d8",
+                client_secret: "a2b698bf7e7c02f898197cf136d1a41f704ca8e4"
             }
         }).done(function(githubuser) {
             $.ajax({
                 url: "https://api.github.com/users/" + githubusername + "/repos",
                 data: {
-                    client_id: "027f16318682173bc33b",
-                    client_secret: "e02e528a3b8439c1d441c97cd6b9a93405cd6aff",
+                    client_id: "b9315bcd5a07fcd759d8",
+                    client_secret: "a2b698bf7e7c02f898197cf136d1a41f704ca8e4",
                     sort: "created: asc",
                     per_page: 5
                 }
@@ -23,18 +23,17 @@ $(document).ready(function() {
                         `
                         <div class="well">
                             <div class="row">
-                                <div class="col-md-9 "> 
+                                <div class="col-md-8"> 
                                     <strong>${repository.name}</strong>
                                     <br>
                                     <p>${repository.description}</p>
                                 </div>
-                                <div class="col-md-3">
-                                    <span class="badge badge-pill badge-watch">Watchers: ${repository.watchers_count}</span>
+                                <div class="col-md-4">
                                     <span class="badge badge-pill badge-star">Stars: ${repository.stargazers_count}</span>    
                                     <span class="badge badge-pill badge-fork">Forks: ${repository.forks_count}</span>
-                                </div>
-                                <div class="col-md-2">
-                                    
+                                    <span class="badge badge-pill badge-watch">Watchers: ${repository.watchers_count}</span>
+                                    <br></br>
+                                    <a href="${repository.html_url}" target="_blank" class="btn btn btn-primary">Repository Page</a>
                                 </div>
                             </div>
                         </div>
