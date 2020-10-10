@@ -4,16 +4,18 @@ $(document).ready(function() {
 
         $.ajax({
             url: "https://api.github.com/users/" + githubusername,
-            data: {
-                client_id: pubconfig.client_id,
-                client_secret: pubconfig.client_secret
-            }
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("Authorization", "Basic " + btoa(pubconfig.client_id+":"+pubconfig.client_secret));
+            },
+            type: "GET",
+            processData: false
         }).done(function(githubuser) {
             $.ajax({
                 url: "https://api.github.com/users/" + githubusername + "/repos",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Authorization", "Basic " + btoa(pubconfig.client_id+":"+pubconfig.client_secret));
+                },
                 data: {
-                    client_id: pubconfig.client_id,
-                    client_secret: pubconfig.client_secret,
                     sort: "created: asc",
                     per_page: 5
                 }
